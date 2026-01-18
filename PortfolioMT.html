@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: bisque;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        height: 95vh;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        background-image: url(headerimg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: space-between;
+        color: whitesmoke;
+    }
+    span img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 5rem;
+        margin-left: 2rem;
+        position: relative;
+        top: 3rem;
+    }
+    header h1{
+        text-align: right;
+        margin-right: 3rem;
+        position: relative;
+        top: -2rem;
+        text-decoration: underline;
+    }
+    header h2{
+        text-align: center;
+    }
+    header p{
+    text-align: center;
+    }
+    h2,ul,p,div,footer{
+        text-align: center;
+    }
+    div{
+        height: 5rem;
+        background-color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 70%;
+        border-radius: 0.5rem;
+        box-shadow: 0px 5px 10px;
+        margin-top: 2rem;
+        position: relative;
+        left: 13rem;
+    }
+    h2,footer{
+        margin-top: 2rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    footer{
+        height: 5rem;
+    }
+    footer span{
+        animation: bounce 7s linear infinite;
+        transition: 0.5s;
+    }
+    @keyframes bounce{
+        0%{
+            transform: translateY(-1rem);
+            position: relative;
+            top: 1rem;
+        }
+        100%{
+            transform: translateY(1rem);
+        }
+    }
+        footer span:nth-child(1){  animation-delay: 0s; }
+        footer span:nth-child(2){  animation-delay: 0.06s; }
+        footer span:nth-child(3){  animation-delay: 0.12s; }
+        footer span:nth-child(4){  animation-delay: 0.18s; }
+        footer span:nth-child(5){  animation-delay: 0.24s; }
+        footer span:nth-child(6){  animation-delay: 0.30s; }
+        footer span:nth-child(7){  animation-delay: 0.36s; }
+        footer span:nth-child(8){  animation-delay: 0.42s; }
+        footer span:nth-child(9){  animation-delay: 0.48s; }
+        footer span:nth-child(10){ animation-delay: 0.54s; }
+        footer span:nth-child(11){ animation-delay: 0.60s; }
+        footer span:nth-child(12){ animation-delay: 0.66s; }
+        footer span:nth-child(13){ animation-delay: 0.72s; }
+        footer span:nth-child(14){ animation-delay: 0.78s; }
+        footer span:nth-child(15){ animation-delay: 0.84s; }
+        footer span:nth-child(16){ animation-delay: 0.90s; }
+        footer span:nth-child(17){ animation-delay: 0.96s; }
+        footer span:nth-child(18){ animation-delay: 1.02s; }
+        footer span:nth-child(19){ animation-delay: 1.08s; }
+        footer span:nth-child(20){ animation-delay: 1.14s; }
+        footer span:nth-child(21){ animation-delay: 1.20s; }
+        footer span:nth-child(22){ animation-delay: 1.26s; }
+        footer span:nth-child(23){ animation-delay: 1.32s; }
+        footer span:nth-child(24){ animation-delay: 1.38s; }
+        footer span:nth-child(25){ animation-delay: 1.44s; }
+        footer span:nth-child(26){ animation-delay: 1.50s; }
+        footer span:nth-child(27){ animation-delay: 1.56s; }
+        footer span:nth-child(28){ animation-delay: 1.62s; }
+        footer span:nth-child(29){ animation-delay: 1.68s; }
+        footer span:nth-child(30){ animation-delay: 1.74s; }
+        footer span:nth-child(31){ animation-delay: 1.80s; }
+        footer span:nth-child(32){ animation-delay: 1.86s; }
+        footer span:nth-child(33){ animation-delay: 1.92s; }
+        footer span:nth-child(34){ animation-delay: 1.98s; }
+        footer span:nth-child(35){ animation-delay: 2.04s; }
+        footer span:nth-child(36){ animation-delay: 2.10s; }
+        footer span:nth-child(37){ animation-delay: 2.16s; }
+        footer span:nth-child(38){ animation-delay: 2.22s; }
+        footer span:nth-child(39){ animation-delay: 2.28s; }
+        footer span:nth-child(40){ animation-delay: 2.34s; }
+        footer span:nth-child(41){ animation-delay: 2.40s; }
+        footer span:nth-child(42){ animation-delay: 2.46s; }
+        footer span:nth-child(43){ animation-delay: 2.52s; }
+        footer span:nth-child(44){ animation-delay: 2.58s; }
+        footer span:nth-child(45){ animation-delay: 2.64s; }
+        footer span:nth-child(46){ animation-delay: 2.70s; }
+        footer span:nth-child(47){ animation-delay: 2.76s; }
+        footer span:nth-child(48){ animation-delay: 2.82s; }
+        footer span:nth-child(49){ animation-delay: 2.88s; }
+        footer span:nth-child(50){ animation-delay: 2.94s; }
+        footer span:nth-child(51){ animation-delay: 3.00s; }
+        footer span:nth-child(52){ animation-delay: 3.06s; }
+        footer span:nth-child(53){ animation-delay: 3.12s; }
+        footer span:nth-child(54){ animation-delay: 3.18s; }
+        footer span:nth-child(55){ animation-delay: 3.24s; }
+        footer span:nth-child(56){ animation-delay: 3.30s; }
+        footer span:nth-child(57){ animation-delay: 3.36s; }
+        footer span:nth-child(58){ animation-delay: 3.42s; }
+        footer span:nth-child(59){ animation-delay: 3.48s; }
+        footer span:nth-child(60){ animation-delay: 3.54s; }
+        footer span:nth-child(61){ animation-delay: 3.60s; }
+        footer span:nth-child(62){ animation-delay: 3.66s; }
+        footer span:nth-child(63){ animation-delay: 3.72s; }
+        footer span:nth-child(64){ animation-delay: 3.78s; }
+        footer span:nth-child(65){ animation-delay: 3.84s; }
+        footer span:nth-child(66){ animation-delay: 3.90s; }
+        footer span:nth-child(67){ animation-delay: 3.96s; }
+        footer span:nth-child(68){ animation-delay: 4.02s; }
+        footer span:nth-child(69){ animation-delay: 4.08s; }
+        footer span:nth-child(70){ animation-delay: 4.14s; }
+        footer span:nth-child(71){ animation-delay: 4.20s; }
+        footer span:nth-child(72){ animation-delay: 4.26s; }
+        footer span:nth-child(73){ animation-delay: 4.32s; }
+        footer span:nth-child(74){ animation-delay: 4.38s; }
+        footer span:nth-child(75){ animation-delay: 4.44s; }
+        footer span:nth-child(76){ animation-delay: 4.50s; }
+        footer span:nth-child(77){ animation-delay: 4.56s; }
+        footer span:nth-child(78){ animation-delay: 4.62s; }
+        footer span:nth-child(79){ animation-delay: 4.68s; }
+        footer span:nth-child(80){ animation-delay: 4.74s; }
+        footer span:nth-child(81){ animation-delay: 4.80s; }
+        footer span:nth-child(82){ animation-delay: 4.86s; }
+        footer span:nth-child(83){ animation-delay: 4.92s; }
+        footer span:nth-child(84){ animation-delay: 4.98s; }
+        footer span:nth-child(85){ animation-delay: 5.04s; }
+        footer span:nth-child(86){ animation-delay: 5.10s; }
+        footer span:nth-child(87){ animation-delay: 5.16s; }
+        footer span:nth-child(88){ animation-delay: 5.22s; }
+        footer span:nth-child(89){ animation-delay: 5.28s; }
+        footer span:nth-child(90){ animation-delay: 5.34s; }
+        footer span:nth-child(91){ animation-delay: 5.40s; }
+        footer span:nth-child(92){ animation-delay: 5.46s; }
+        footer span:nth-child(93){ animation-delay: 5.52s; }
+        footer span:nth-child(94){ animation-delay: 5.58s; }
+        footer span:nth-child(95){ animation-delay: 5.64s; }
+        footer span:nth-child(96){ animation-delay: 5.70s; }
+        footer span:nth-child(97){ animation-delay: 5.76s; }
+        footer span:nth-child(98){ animation-delay: 5.82s; }
+        footer span:nth-child(99){ animation-delay: 5.88s; }
+        footer span:nth-child(100){ animation-delay: 5.94s; }
+        footer span:nth-child(101){ animation-delay: 6.00s; }
+        footer span:nth-child(102){ animation-delay: 6.06s; }
+        footer span:nth-child(103){ animation-delay: 6.12s; }
+        footer span:nth-child(104){ animation-delay: 6.18s; }
+        footer span:nth-child(105){ animation-delay: 6.24s; }
+        footer span:nth-child(106){ animation-delay: 6.30s; }
+        footer span:nth-child(107){ animation-delay: 6.36s; }
+        footer span:nth-child(108){ animation-delay: 6.42s; }
+        footer span:nth-child(109){ animation-delay: 6.48s; }
+        footer span:nth-child(110){ animation-delay: 6.54s; }
+        footer span:nth-child(111){ animation-delay: 6.60s; }
+        footer span:nth-child(112){ animation-delay: 6.66s; }
+        footer span:nth-child(113){ animation-delay: 6.72s; }
+        footer span:nth-child(114){ animation-delay: 6.78s; }
+        footer span:nth-child(115){ animation-delay: 6.84s; }
+        footer span:nth-child(116){ animation-delay: 6.90s; }
+        footer span:nth-child(117){ animation-delay: 6.96s; }
+        footer span:nth-child(118){ animation-delay: 7.02s; }
+        footer span:nth-child(119){ animation-delay: 7.08s; }
+        footer span:nth-child(120){ animation-delay: 7.14s; }
+</style>
+<body>
+    <header>
+        <span><img src="profil.jpg" alt="Photo_de_profil"></span>
+        <h1>Mon Portfolio</h1>
+        <h2>WEKEGOGO Horace</h2>
+        <p>16 ans - Passioné de technologie - Futur Hacker Ethique & Expert en sécurité informatique</p>
+    </header>
+    <p>Nom: WEKEGOGO</p>
+    <p>Prénom: Horace</p>
+    <p>Âge: 16 ans</p>
+    <h2>A propos de moi</h2>
+    <center><hr width="95%" size="3px" color="skyblue"></center> 
+    <div id="about">
+        Je suis passioné par l'informatique et j'aspire à devenir Hacker Ethique international et Expert en CyberSécurité.
+    </div>
+    <h2>Compétences</h2>
+    <center><hr width="95%" size="3px" color="skyblue"></center>
+    <div id="compétences">
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Apprentissage de JavaScript, PHP et Python</li>
+            <li>Aspirant en hacking éthique et cybersécurité</li>
+            <li>Curiosité et volonté de toujours en savoir plus</li>
+        </ul>
+    </div>
+    <h2>Objectifs</h2>
+    <center><hr width="95%" size="3px" color="skyblue"></center>
+    <div id="project">
+        <ul>
+            <li>Création de page et d'applications web dynamiques, fluides et interactifs (Développement web).</li>
+            <li>Création d'applications mobiles et de jeux vidéos.</li>
+            <li>Résolution logique de problème de sécurité informatique</li>
+            <li>Maîtrise de la maintenance informatique (hardware & software)</li>
+        </ul>
+    </div>
+    <h2>Centres d'intérêt</h2>
+    <center><hr width="95%" size="3px" color="skyblue"></center>
+    <div id="interet">
+        <ul>
+            <li>Programmation et développement web</li>
+            <li>Sécurité informatique et hacking éthique</li>
+            <li>Lecture sur la CyberSécurité</li>
+            <li>Jeux vidéos et exploration technique</li>
+        </ul>
+    </div>
+    <h2>Contact</h2>
+    <center><hr width="95%" size="3px" color="skyblue"></center>
+    <div id="contact">
+        📧Email: <a href="wekegogohorace715@gmail.com"> wekegogohorace715@gmail.com</a>
+        🌍Localisation: Bénin, Abomey-Calavi, Ouéga-Zoglomey
+    </div>
+    <footer>
+        <span>L</span>
+        <span>a</span>
+        <span></span>
+        <span>C</span>
+        <span>y</span>
+        <span>b</span>
+        <span>e</span>
+        <span>r</span>
+        <span>S</span>
+        <span>é</span>
+        <span>c</span>
+        <span>u</span>
+        <span>r</span>
+        <span>i</span>
+        <span>t</span>
+        <span>é</span>
+        <span>-</span>
+        <span>n</span>
+        <span>'</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>-</span>
+        <span>p</span>
+        <span>a</span>
+        <span>s</span>
+        <span>-</span>
+        <span>s</span>
+        <span>e</span>
+        <span>u</span>
+        <span>l</span>
+        <span>e</span>
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+        <span>-</span>
+        <span>u</span>
+        <span>n</span>
+        <span>e</span>
+        <span>-</span>
+        <span>c</span>
+        <span>o</span>
+        <span>m</span>
+        <span>p</span>
+        <span>é</span>
+        <span>t</span>
+        <span>e</span>
+        <span>n</span>
+        <span>c</span>
+        <span>e</span>
+        <span>-</span>
+        <span>c</span>
+        <span>'</span>
+        <span>e</span>
+        <span>s</span>
+        <span>t</span>
+        <span>-</span>
+        <span>a</span>
+        <span>u</span>
+        <span>s</span>
+        <span>s</span>
+        <span>i</span>
+        <span>-</span>
+        <span>u</span>
+        <span>n</span>
+        <span>e</span>
+        <span>-</span>
+        <span>r</span>
+        <span>e</span>
+        <span>s</span>
+        <span>p</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+        <span>a</span>
+        <span>b</span>
+        <span>i</span>
+        <span>l</span>
+        <span>i</span>
+        <span>t</span>
+        <span>é</span>
+        <span>-</span>
+        <span>e</span>
+        <span>n</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+        <span>s</span>
+        <span>-</span>
+        <span>l</span>
+        <span>e</span>
+        <span>-</span>
+        <span>m</span>
+        <span>o</span>
+        <span>n</span>
+        <span>d</span>
+        <span>e</span>
+        <span>-</span>
+        <span>n</span>
+        <span>u</span>
+        <span>m</span>
+        <span>é</span>
+        <span>r</span>
+        <span>i</span>
+        <span>q</span>
+        <span>u</span>
+        <span>e</span>
+    </footer>
+</body>
+</html>
